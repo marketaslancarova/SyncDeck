@@ -26,18 +26,50 @@
   background-color: #f9f9f9;
 }
 
+/*  */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.task {
+  padding: 10px 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-left: 4px solid #aacfa1;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.task-title {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.task-description {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #555;
+}
+
 .footer {
   padding: 20px;
   text-align: center;
   background-color: #dff3d8;
 }
 
+
+/* Media Queries - Tablets */
 @media (max-width: 900px) {
   .board {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Media Queries - Phones */
 @media (max-width: 700px) {
   .board {
     grid-template-columns: 1fr;
